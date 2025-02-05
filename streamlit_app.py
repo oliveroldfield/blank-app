@@ -69,6 +69,14 @@ with st.expander("ℹ️ About this demo", expanded=True):
     st.markdown("""
     This demo combines rule-based and ML approaches to detect potentially fraudulent transactions.
     
+    It is all demo data but contains most core essentials:
+                
+    1. We generate features with randomly generated Training data
+    2. We generate fraud labels based on a weighted combination of features
+    3. We train the model and set a scaler to standardise the features
+    4. We do a rule based risk assessment based on the model and a few other defined rules
+                
+                
     **Example Low-Risk Transaction:**
     - Time: 2:00 PM
     - Amount: $500
